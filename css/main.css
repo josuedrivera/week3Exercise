@@ -1,2 +1,40 @@
 /* Cascading StyleSheets */
 /* CSS selector */
+body {
+	text-align: center;
+}
+.box {
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	/*border: 1px solid black;*/
+}
+.red {
+	background-color: red;
+}
+.yellow {
+	background-color: yellow;
+}
+.green {
+	background-color: green;
+}
+.blue {
+	background-color: blue;
+}
+.container {
+	height: 200px;
+	width: 200px;
+	background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+	div.yellow, div.green {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	div.box {
+		width: 100%;
+	}
+}
